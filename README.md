@@ -1,5 +1,5 @@
 
-                    # Sock
+# Sock
 
 A burp extension can exteract the social url by the regex you pass and 
 check if the finding is allow to hijacking or not 
