@@ -1,0 +1,45 @@
+{
+
+  "Facebook": {
+    "errorType": "message",
+    "errorMsg": "You must log in to continue",
+    "urlRegex": "https?://(www\\.)?facebook\\.com/(?!()$)([a-zA-Z0-9_\\-\\.])+",
+     "exclude":"https://www\\.facebook\\.com/(profile\\.php|settings|watch|login|recover|security|notifications|checkpoint|translations|dyi|i|bussiness|legal|dialog|sharer|share\\.phpr|tr|business|platform|help|ads|policies|selfxss|audiencenetwork)"
+  },
+  "YouTube": {
+    "errorType": "status_code",
+    "status_code": 404,
+    "urlRegex": "https?://(www\\.)?youtube\\.com/((gc|channel|user)/|@)([a-zA-Z0-9_-]|(\\.))+"
+  },
+  "TikTok": {
+    "errorType": "status_code",
+    "status_code":404,
+    "urlRegex": "https?://(www\\.)?tiktok\\.com/@([a-zA-Z0-9_-]|(\\.))+"
+  },
+  "Pinterest": {
+    "errorType": "message",
+    "errorMsg":"User not found",
+    "urlRegex": "https?://(www\\.)?pinterest.com/([a-zA-Z0-9_-]|(\\.))+"
+  },
+  "tumblr": {
+    "errorType": "message",
+    "errorMsg":"There's nothing here.",
+    "urlRegex": "https?://[a-zA-Z0-9\\.-]+\\.tumblr.com"
+  },
+  "Instagram": {
+    "errorType": "None",
+    "urlRegex": "https?://(www\\.)?instagram\\.com/([a-zA-Z0-9_-]|(\\.))+"
+  },
+  "Linkedin": {
+    "errorType": "None",
+    "urlRegex": "https?://(www\\.)?linkedin\\.com/company/([a-zA-Z0-9_-]|(\\.))+"
+  },
+  "Twitter": {
+    "errorType": "None",
+    "urlRegex": "https?://(www\\.)?twitter\\.com/(?!(intent)$)([a-zA-Z0-9_-]|(\\.))+"
+  },
+  "Messanger": {
+    "errorType": "None",
+    "urlRegex": "https?://m\\.me/([a-zA-Z0-9_-]|(\\.))+"
+  }
+}
