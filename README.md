@@ -87,12 +87,14 @@ This match the status code of the finding request status
 
 ### exclude
 This option exclude the finding by regex 
+
 For example. the extension will add these urls to result 
 ```
 https://facebook.com/help
 https://facebook.com/setting
 ```
 thses endpoints aren't accounts on facebook they's just endpoints and we don't need these endpoints 
+
 So we have `exclude` option. It's exclude the finding by regex
 
 Example
