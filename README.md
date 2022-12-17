@@ -22,12 +22,13 @@ If you disable it the extension will add the account to result without checking
 
 This extension check on finding by regex pattern provided in the json file 
 
-The default file in is https://raw.githubusercontent.com/alanEG/Sock/main/resource/regex.json
+The default file is https://raw.githubusercontent.com/alanEG/Sock/main/resource/regex.json
 
-Once you run the extension and resive the response it will load the json from default url or url you did provided 
+Once you run the extension and receive the response it will load the json from default url or url you provided.
 
 There are several json options available
 
+### None 
 Here is example for the option that get only the finding
 ```json
 {
@@ -39,6 +40,7 @@ Here is example for the option that get only the finding
 ```
 Nothing more here the extension will gets the links from response and load it to the table 
 
+### message
 If you need to check on finding
 You can use the following json object
 
@@ -56,6 +58,7 @@ This option tells to the extension to gets the `urlRegex` from response
 Then send request to the url then check if `errorMsg` in the response 
 If it's. the extension will flag the finding url as `Vulnrable`
 
+### notMessage
 There is another option called `notMessage`
 Example
 ```json
@@ -69,20 +72,7 @@ Example
 ```
 By this option you tell to the extension if finding url response has this value in `errorMsg` that mean this account is `Not_Vulnrable`
 
-Last option is `status_code`
-This is option check the status code of the finding response
-
-Example 
-```json
-{
-  "facebook":{
-    "errorType": "notMessage",
-    "errorMsg":"Account found",
-    "urlRegex": "https?://(www\\.)?facebook\\.com/[a-zA-Z0-9]"
-  }
-}
-```
-
+### status_code
 Also there is `status_code` option 
 This match the status code of the finding request status
 ```json
@@ -95,7 +85,7 @@ This match the status code of the finding request status
 }
 ```
 
-The last option is `exclude` 
+### exclude
 This option exclude the finding by regex 
 For example
 The extension will add this urls to result 
@@ -117,5 +107,3 @@ Example
   }
 }
 ```
-
-$
