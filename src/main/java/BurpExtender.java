@@ -212,7 +212,7 @@ public class BurpExtender implements IBurpExtender, ITab,IProxyListener
                 }
                 break;
             case "None":
-                extenderGui.addToTable("Not_Vulnrable",url, fromUrl);
+                extenderGui.addToTable("Check_Disabled",url, fromUrl);
                 break;
         }
     }
