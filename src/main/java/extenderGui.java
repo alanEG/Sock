@@ -146,7 +146,7 @@ public class extenderGui extends javax.swing.JPanel {
             }
         });
 
-        inputResRegex.setText("https://github.com/alanEG/Sock/blob/main/resource/regex.json");
+        inputResRegex.setText("https://raw.githubusercontent.com/alanEG/Sock/main/resource/regex.json");
         inputResRegex.setToolTipText("Enter Regex path or url for math social media links by regex in path/url for more information README.txt");
         inputResRegex.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
