@@ -3,7 +3,7 @@
   "Facebook": {
     "errorType": "message",
     "errorMsg": "You must log in to continue",
-    "urlRegex": "https?://(www\\.)?facebook\\.com/(?!()$)([a-zA-Z0-9_\\-\\.])+",
+    "urlRegex": "https?://(www\\.)?facebook\\.com/([a-zA-Z0-9_\\-\\.])+",
      "exclude":"https://www\\.facebook\\.com/(profile\\.php|settings|watch|login|recover|security|notifications|checkpoint|translations|dyi|i|bussiness|legal|dialog|sharer|share\\.phpr|tr|business|platform|help|ads|policies|selfxss|audiencenetwork)"
   },
   "YouTube": {
