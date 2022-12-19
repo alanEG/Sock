@@ -130,7 +130,7 @@ public class BurpExtender implements IBurpExtender, ITab,IProxyListener
                         + "Connection: close\r\n"
                         + "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36\r\n"
                         + "Sec-Fetch-Site: same-origin\r\n" 
-                        + "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n"
+                        + "Accept: */*\r\n"
                         + "Accept-Language: en-US,en;q=0.9\r\n"
                         + "\r\n").getBytes(Charset.forName("UTF-8")));
             return response;
@@ -205,7 +205,7 @@ public class BurpExtender implements IBurpExtender, ITab,IProxyListener
                 break;
             case "status_code":
                 responseAnaluz = helpers.analyzeResponse(response);
-                if (responseAnaluz.getStatusCode() != (int)messageObj.get("status_code").getAsInt()){
+                if (responseAnaluz.getStatusCode() == (int)messageObj.get("status_code").getAsInt()){
                     extenderGui.addToTable("Vulnrable",url, fromUrl);
                 } else {
                     extenderGui.addToTable("Not_Vulnrable",url, fromUrl);
